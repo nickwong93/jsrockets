@@ -1,0 +1,24 @@
+Explanation Notes
+
+Variablessss
+var favColor = 'blue';
+var myFavColors = ['blue', 'red', 'green'];
+var numOfFavColors = 3;
+var hasGotFavColors = true
+var richObject = {
+	firstName: 'Rich',
+	lastName: 'Armstrong',
+	favColors: ['blue', 'red', 'green'],
+	yearsAlive: 105,
+	isMale: true
+}
+
+
+Function
+var whatIsMyFavColor = function () {
+	
+}
+
+var doSomething = function () {
+	console.log
+}
