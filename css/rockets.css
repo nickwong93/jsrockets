@@ -1,0 +1,148 @@
+body{
+	font-family: 'helvetica', 'arial', sans-serif;
+}
+
+.left{
+	background-color: aquamarine;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+}
+
+.interface{
+	text-align: center;
+	padding: 215px 20px;
+}
+
+a.button{
+	display: inline-block;
+	background-color:white;
+	color: black;
+	padding: 20px 30px;
+	text-decoration: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: color 300ms;
+}
+
+a:hover{
+	color: red;
+}
+
+.button2{
+	display: inline-block;
+	background-color:red;
+	color: white;
+	padding: 20px 30px;
+	text-decoration: none;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: color 300ms;
+}
+
+
+.right{
+	background-color: none;
+	position: fixed;
+	width: 50%;
+	height: 100%;
+	top: 0%;
+	right: 0%;
+}
+
+.ground{
+	background-color: green;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	height: 20px;
+}
+
+.nervous{
+	position: absolute;
+	bottom: 150px;
+	left: 50%;
+	width: 136px;
+	height: 76px;
+	margin-left: -140px;
+	background: url(../img/nervous.png) no-repeat 0 0;
+	display: none;
+}
+
+.nervous.show{
+	display: block;
+}
+
+.cantWait{
+	position: absolute;
+	bottom: 150px;
+	left: 60%;
+	width: 136px;
+	height: 76px;
+	background: url(../img/cantWait.png) no-repeat 0 0;
+	display: none;
+}
+
+.cantWait.show{
+	display: block;
+}
+
+.rocket{
+	position: absolute;
+	left:50%;
+	bottom: 20px;
+	width: 136px;
+	height: 157px;
+	margin-left: -65px;
+	background: url('../img/Rocket_State1.png') no-repeat 0 0;
+	transition: bottom 10000ms;
+}
+
+body.body-state1 .rocket{
+	transition: none;
+}
+
+/*rocket bg image*/
+body.body-state2 .rocket{
+	background-image: url('../img/Rocket_State2.gif');
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	background-image: url('../img/Rocket_State3.gif');
+}
+
+body.body-state5 .rocket{
+	background-image: url('../img/Boom.png');
+	width: 115px;
+	height: 76px;
+
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+	bottom: 1000px;
+}
+.state1,
+.state2,
+.state3,
+.state4,
+.state5 {
+	display: none;
+}
+
+body.body-state1 .state1{display: block;}
+body.body-state2 .state2{display: block;}
+body.body-state3 .state3{display: block;}
+body.body-state4 .state4{display: block;}
+body.body-state5 .state5{display: block;}
+
+a{
+
+}
+
+a.button{
+
+}
